@@ -54,6 +54,37 @@ public class Playlist {
              }
          }
      }
+     
+     /**
+       * Removes a specific song from the playlist
+       */
+      public void removeSong(String name)
+      {
+          for (int i = 0; i < playlist.size(); i++)
+          {
+              if (playlist.get(i).getName().equals(name))
+              {
+                  playlist.remove(i);
+              }
+          }
+      }
+      
+      /**
+       * Displays the entire playlist
+       * @return the entire playlist
+       */
+      public String showPlaylist()
+      {
+          String list = "";
+          for (Song song : playlist)
+          {
+              list += song.toString();
+          }
+          list += "\n";
+          return list;
+      }
+      
+      
 
 
       
