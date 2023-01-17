@@ -67,5 +67,27 @@ public class Song {
      {
          return liked;
      }
-
+     
+     /**
+    * Sets liked status
+    */
+    public void setLikedStatus()
+    {
+         liked = !liked;
+    }
+    
+    /**
+    * Creates a string that can be used to display the playlist
+    * @return a string that can be used to display the playlist
+    */
+    public String toString()
+    {
+         String playlist = title + " by " + artist;
+         playlist += " (" + (int) dur/60 + ":" + (int) dur%60 + ")";
+         if (liked)
+         {
+             playlist += "-- liked";
+         }
+         return playlist;
+    }
 }
