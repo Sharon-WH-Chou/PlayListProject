@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Playlist
+comment0.text=\n\ The\ Playlist\ class,\ which\ will\ keep\ track\ of\ a\ playlist\ of\ Song\ objects\n\ Refer\ to\ the\ project\ description\ to\ make\ sure\ you\ have\ access\ to\ all\ available\ methods\n
+comment1.params=
+comment1.target=Playlist()
+comment1.text=\n\ Constructor--\ this\ doesn't\ need\ any\ parameters.\ You\ should\ just\ initialize\ the\ ArrayList\ and\n\ then\ use\ additional\ methods\ to\ add\ Songs\ in\ one-by-one\n
+comment2.params=song
+comment2.target=void\ addSong(Song)
+comment2.text=\n\ Adds\ an\ existing\ song\ object\n
+comment3.params=name\ artist\ dur
+comment3.target=void\ addSong(java.lang.String,\ java.lang.String,\ int)
+comment3.text=\n\ Adds\ a\ new\ song\ object\n
+comment4.params=name
+comment4.target=void\ likeSong(java.lang.String)
+comment4.text=\n\ Likes\ the\ given\ song.\n\ @param\ name\ of\ the\ song\n
+numComments=5

@@ -1,7 +1,7 @@
 /**
  * File for a Song class to be used in the Playlist Project
  * @author
- * @version
+ * @date
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
