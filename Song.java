@@ -81,7 +81,15 @@ public class Song {
     public String toString()
     {
          String playlist = title + " by " + artist;
-         playlist += " (" + (int) dur/60 + ":" + (int) dur%60 + ")";
+         playlist += " (" + (int) dur/60 + ":";
+         if ((int)dur%60 < 10)
+         {
+             playlist += "0" + (int)dur%60 + ")";
+         }
+         else
+         {
+             playlist += (int)dur%60 + ")";
+         }
          if (liked)
          {
              playlist += "-- liked";
