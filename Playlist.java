@@ -42,6 +42,7 @@ public class Playlist {
      
      /**
       * Likes the given song.
+      * 
       * @param name of the song
       */
      public void likeSong(String name)
@@ -71,7 +72,8 @@ public class Playlist {
       
       /**
        * Displays the entire playlist
-       * @return the entire playlist
+       * 
+       * @return a String of the entire playlist
        */
       public String showPlaylist()
       {
@@ -79,26 +81,69 @@ public class Playlist {
           for (Song song : playlist)
           {
               list += song.toString();
+              list += "\n";
           }
-          list += "\n";
           return list;
+      }
+      
+      /**
+       * Examines a sublist of just the "liked" songs
+       * 
+       * @return a String of the sublist of the "liked" songs
+       */
+      public String showLikedPlaylist()
+      {
+          String likedList = "";
+          for (Song song : playlist)
+          {
+              if (song.getLiked())
+              {
+                  likedList += song.toString();
+                  likedList += "\n";
+              }
+          }
+        return likedList;
+      }
+      
+      /**
+       * Prints the total duration of the playlist
+       * 
+       * @return String of duration of playlist in minutes
+       */
+      public String printDuration()
+      {
+          int sum = 0;
+          String total = "";
+          for (Song song : playlist)
+          {
+              sum += song.getDuration();
+          }
+          total += (int) sum/60 + ":";
+         if ((int)sum%60 < 10)
+         {
+             total += "0" + (int)sum%60;
+         }
+         else
+         {
+             total += (int)sum%60;
+         }
+         return total;
       }
       
       
 
-
-      
-
-      /**
-       * Methods-- Remember that you need to be able to complete all of the following:
-       * Adding a song
-       * 'liking' a song
-       * Removing a specific song
-       * Examining all Songs (a String return or void print makes sense here)
-       * Examining a sublist of all liked songs
-       * Determining the total duration of all songs
-       * Removing all unliked songs from the playlist (careful with this one!)
-       */
-    
-      
+    /**
+     * Removes all “unliked” songs in a playlist
+     */
+    public void removeUnliked()
+    {
+        for (int i = 0; i < playlist.size(); i++)
+        {
+            if (!playlist.get(i).getLiked())
+            {
+                playlist.remove(i);
+                i--;
+            }
+        }
+    }
 }
