@@ -1,0 +1,20 @@
+
+/*
+
+COMMENTS FROM THE INSTRUCTOR:
+
+Such nice work on this project, you two! You have an awesome tester,
+and you have a working strategy for removing liked items from the
+playlist. (I'm not a fan of altering a for-loop index in the middle
+of the loop that way, but it works!)
+
+Oh, also be sure to include JavaDoc comments at the beginning of your
+files with File information and @author and @version fields indicated.
+People look to see who's responsible for a file there! :)
+
+Overall, excellent work!
+
+SCORE: 20/20
+
+*/
+
