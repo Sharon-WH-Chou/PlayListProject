@@ -2,8 +2,8 @@
 /**
  * Write a description of class SongTester here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @authors Sharon Chou and Kamryn Chan
+ * @version 2023-01-19
  */
 public class SongTester
 {

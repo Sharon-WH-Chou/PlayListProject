@@ -3,6 +3,7 @@
  * playlist in the main method. You don't need to follow the testing specifications of this exactly
  * if you want to write your own separate tester instead.
  * Note that there's no need for a Scanner in this project-- all of the playlist can be 'hardcoded' into main.
+ * 
  * @authors Sharon Chou and Kamryn Chan
  * @version 2023-01-19
  */

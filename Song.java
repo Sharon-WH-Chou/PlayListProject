@@ -1,7 +1,8 @@
 /**
  * File for a Song class to be used in the Playlist Project
- * @author
- * @date
+ * 
+ * @authors Sharon Chou and Kamryn Chan
+ * @version 2023-01-19
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
